@@ -1,0 +1,137 @@
+package com.service;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import com.model.Laptop;
+import com.util.ApplicationUtil;
+
+public class LaptopService {
+
+	public static List <Laptop> buildServiceList(List <String> ServiceRecords) {
+
+
+		
+		List <Laptop> objectList = new ArrayList<Laptop>();
+		// FILL THE CODE HERE
+		return objectList;
+	}
+
+	public boolean addServiceList(String[] input)	{
+
+		// FILL THE CODE HERE
+		 List<String> List=ApplicationUtil.extractDetails(input);
+		return false;
+	}	 	  	  		    	  	      	      	 	
+	public static double calculateBillAmount(String rootIssue,String issueIntensity)
+	{
+		double bill=0.0;
+		// FILL THE CODE HERE 
+		if(rootIssue.equalsIgnoreCase("Software")) {
+			if(issueIntensity.equalsIgnoreCase("High")) {
+				double charge=0.10*2000;
+				bill=2000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Mid")) {
+				double charge=0.05*2000;
+				bill=2000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Low")) {
+				double charge=0.05*2000;
+				bill=2000-charge;
+				
+			}
+			else {
+				
+			}
+		}
+		if(rootIssue.equalsIgnoreCase("Display")) {
+			if(issueIntensity.equalsIgnoreCase("High")) {
+				double charge=0.10*5000;
+				bill=5000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Mid")) {
+				double charge=0.05*5000;
+				bill=5000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Low")) {
+				double charge=0.05*5000;
+				bill=5000-charge;
+				
+			}
+			else {
+				
+			}
+		}
+		else if(rootIssue.equalsIgnoreCase("Keyboard")) {
+			if(issueIntensity.equalsIgnoreCase("High")) {
+				double charge=0.10*1000;
+				bill=1000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Mid")) {
+				double charge=0.05*1000;
+				bill=1000+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Low")) {
+				double charge=0.05*1000;
+				bill=1000-charge;
+				
+			}
+			else {
+				
+			}
+		}
+		else if(rootIssue.equalsIgnoreCase("Sound")) {
+			if(issueIntensity.equalsIgnoreCase("High")) {
+				double charge=0.10*800;
+				bill=800+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Mid")) {
+				double charge=0.05*800;
+				bill=800+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Low")) {
+				double charge=0.05*800;
+				bill=800-charge;
+				
+			}
+			else {
+				
+			}
+		}
+		else if(rootIssue.equalsIgnoreCase("Key")) {
+			if(issueIntensity.equalsIgnoreCase("High")) {
+				double charge=0.10*500;
+				bill=500+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Mid")) {
+				double charge=0.05*500;
+				bill=500+charge;
+				
+			}
+			else if(issueIntensity.equalsIgnoreCase("Low")) {
+				double charge=0.05*500;
+				bill=500-charge;
+				
+			}
+			else {
+				
+			}
+		}
+		else {
+			
+		}
+		return bill;
+	}
+
+}
+

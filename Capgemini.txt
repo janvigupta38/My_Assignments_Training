@@ -1,0 +1,14 @@
+1Introduction to Algorithmshttps://www.youtube.com/watch?v=ovz54KoZo9o&t=93s
+2How to write Algorithmshttps://www.youtube.com/watch?v=C2InORAa6hU
+3Data Structures and Algorithmshttps://www.youtube.com/playlist?list=PLPcraNJguHOHTzJn7BRpJAwXt47joBM2g
+4Algorithmshttps://youtu.be/RBSGKlAvoiM
+5Essential Soft Skillshttps://www.youtube.com/playlist?list=PLWPirh4EWFpFF-j851ibhPmPkj_U1fprs          
+6Softskillshttps://www.youtube.com/watch?v=x60GHpQ8gJk&list=PLWPirh4EWFpFIElSxplDlEhRDZHkBD-0n
+
+CGMA2386831
+Debuuging
+Sonar Q and Sonar lind
+Pmd
+CkeckStyle
+JKOBO pluggin
+Unit testing-Testing

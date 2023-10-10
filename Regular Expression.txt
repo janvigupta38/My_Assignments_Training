@@ -1,0 +1,8 @@
+Regular Expression:-  are strung patterns describe a txt. Using which we can searxh,extract and edit txt.
+package-: java.util.regex
+-Pattern- compiled version of regex
+--> Pattern pattern=Pattern.compile(pattern);
+
+-Matcher-iterprets and matches with txt.
+--> Matcher matchet=pattern.matcher(txt);
+-PatternSyntaxObject

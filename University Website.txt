@@ -1,0 +1,8 @@
+
+Create a Restful webservice to declare the result of University
+
+There will be 2 users who can access the aplication:
+
+1. Management: Includes professors and other university management. They should be able to add, edit and delete the results for candidtes. Also, they should be able to view all results and serach as well.
+
+2. Candidate: Candidte should be able to view his/her result. They should not be able to view any other candidate's result apart from themselves. Nor should they be able to add, edit or delete.

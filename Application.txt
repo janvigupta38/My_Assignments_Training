@@ -1,0 +1,66 @@
+package com.util;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import com.exception.InvalidLaptopException;
+import com.service.LaptopService;
+
+public class ApplicationUtil {
+
+	public static List<String> extractDetails(String[] input) {
+	    List<String> stringList = new ArrayList<String>();
+
+	    	// FILL THE CODE HERE
+	    for(String s:input) {
+	    	String [] str=s.split(":");
+	    	boolean res=false;
+	    	try {
+				res=validateLaptopName(str[1]);
+			} catch (InvalidLaptopException e) {
+				
+				e.printStackTrace();
+			}
+	    	if(res==true) {
+	    		
+	    		stringList.add(s);
+	    	}
+	    }
+	   	 return stringList;
+	}
+
+
+	public static boolean validateLaptopName(String laptopName) throws InvalidLaptopException{
+		// FILL THE CODE HERE
+		if(laptopName.equalsIgnoreCase("DELL")|| laptopName.equalsIgnoreCase("HP")|| laptopName.equalsIgnoreCase("APPLE")||laptopName.equalsIgnoreCase("LENOVO") ) {
+			return true;
+		}else {
+	    	return false;
+		}
+	}
+
+	public static java.util.Date stringToDateConverter(String stringDate) {
+		// FILL THE CODE H
+		java.util.Date date=null;
+		SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+		try {
+			date=sdf.parse(stringDate);
+			
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return date;
+	}
+
+	 	  	  		    	  	      	      	 	
+
+}
